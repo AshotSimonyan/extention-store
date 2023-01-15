@@ -1,0 +1,85 @@
+/*fonts*/
+$font-primary: 'Poppins', sans-serif;
+
+/*colors*/
+$color-primary: #ff9244;
+$color-primary-hover: #CC7536;
+$color-secondary: #f7f7f7;
+$color-disabled: #CCCCCC;
+$color-installed: rgba(76, 175, 80, 0.5);
+$color-danger: #E31B0C;
+$color-danger-light: #FFA8A8;
+$color-danger-light-hover: #C66660;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-black-100: rgba($color-black, 0.1);
+$color-black-400: rgba($color-black, 0.6);
+$color-black-600: rgba($color-black, 0.6);
+$color-black-900: rgba($color-black, 0.9);
+$color-text-primary: $color-black-900;
+$color-border: $color-black-100;
+
+
+$main-colors: (
+        primary: $color-primary,
+        secondary: $color-secondary,
+        text-primary: $color-text-primary,
+        installed: $color-installed,
+        disabled: $color-disabled,
+        danger: $color-danger,
+) !default;
+
+/*text sizes*/
+$fz-sm: 12px;
+$fz-normal: 14px;
+$fz-medium: 16px;
+$fz-lg: 20px;
+
+$base-font-size: $fz-normal;
+
+$text-font-sizes: (
+        sm: $fz-sm,
+        normal: $fz-normal,
+        medium: $fz-medium,
+        lg: $fz-lg,
+) !default;
+
+$heading-font-sizes: (
+        h4: 14px,
+        h3: 16px,
+        h2: 18px,
+        h1: 24px
+) !default;
+
+/*container*/
+$cont-width: 1180px;
+$cont-width: 1180px;
+$cont-padding: 20px;
+
+/*Transitions*/
+$trsn-dur: .3s;
+$trsn-dur-md: .5s;
+
+/*Border radius */
+$br-main: 4px;
+$br-circle: 50%;
+
+/*box-shadow*/
+$box-shadow-main: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);;
+
+
+/*Resolutions*/
+$screen-lg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 767px;
+$screen-xs: 480px;
+$screen-xxs: 360px;
+
+$resolutions: (
+        xxs: $screen-xxs,
+        xs: $screen-xs,
+        sm: $screen-sm,
+        md: $screen-md,
+        lg: $screen-lg
+) !default;
+

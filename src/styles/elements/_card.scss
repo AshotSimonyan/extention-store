@@ -1,0 +1,46 @@
+.card {
+    border: 1px solid $color-border;
+    padding: 16px;
+    border-radius: $br-main;
+    box-shadow: $box-shadow-main;
+    background-color: $color-white;
+
+    img {
+        width: 54px;
+    }
+
+    .title {
+        padding-bottom: 4px;
+    }
+    &-top {
+        display: flex;
+        align-items: flex-start;
+
+        &-content {
+            padding-left: 12px;
+            overflow: hidden;
+        }
+    }
+
+    .short-desc {
+        margin: 20px 0 12px;
+        height: 60px;
+        word-break: break-word;
+    }
+
+    .author {
+        padding-top: 12px;
+    }
+
+    &-body {
+        max-height: 500px;
+        overflow: auto;
+        word-break: break-word;
+    }
+
+    &-footer {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,113 @@
+.btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 22px;
+    transition: .3s;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    text-align: center;
+    border-radius: $br-main;
+
+
+    &.primary {
+        background-color: $color-primary;
+        color: $color-white;
+
+        .icon {
+            fill: $color-black-600;
+        }
+
+        &:hover {
+            background-color: $color-primary-hover;
+
+
+        }
+    }
+    &.outlined {
+        border-color: $color-black-400;
+        &:hover {
+            background-color: $color-black-100;
+        }
+    }
+    &.secondary {
+        background-color: $color-danger-light;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-danger-light-hover;
+        }
+    }
+    &.white {
+        background-color: $color-white;
+        box-shadow: $box-shadow-main;
+
+        &:hover {
+            background-color: $color-black-100;
+        }
+    }
+
+    &.small {
+        height: 36px;
+        text-transform: uppercase;
+    }
+
+    &.large {
+        height: 45px;
+    }
+
+    &.disabled {
+        &.primary {
+            border-color: $color-border;
+            background-color: $color-white;
+            color: $color-text-primary;
+            pointer-events: none;
+
+            &:hover {
+                //background-color: $color-primary-hover;
+            }
+        }
+    }
+
+    .icon {
+        margin-right: 8px;
+    }
+}
+
+.expand-btn {
+    height: 48px;
+    width: 48px;
+    border-radius: $br-main;
+    cursor: pointer;
+    transition: $trsn-dur;
+
+    .icon {
+        transition: $trsn-dur;
+    }
+    &:hover {
+        background-color: $color-black-100;
+    }
+
+    &.rotate {
+        .icon {
+            rotate: 180deg
+        }
+    }
+
+}
+
+.btn-url {
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 8px;
+    border: 1px solid $color-border;
+    border-radius: $br-main;
+
+
+    .icon {
+        margin-right: 8px;
+    }
+}

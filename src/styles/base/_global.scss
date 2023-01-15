@@ -1,0 +1,77 @@
+@each $key,$val in $heading-font-sizes {
+    #{$key}, .#{$key} {
+        font-size: #{$val};
+    }
+}
+
+@each $key,$val in $text-font-sizes {
+    .text-#{$key} {
+        font-size: #{$val};
+    }
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.truncate {
+    @include ellipsis(100%);
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.text-divider {
+    position: relative;
+    padding: 20px 0;
+
+    span {
+        position: relative;
+        z-index: 1;
+        padding-right: 20px;
+        background-color: $color-white;
+    }
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        background-color: $color-border;
+        transform: translateY(-50%);
+    }
+}
+
+.button-group {
+    display: flex;
+    padding-top: 32px;
+    border-top: 1px solid $color-border;
+    >* {
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+}

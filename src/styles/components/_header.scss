@@ -1,0 +1,42 @@
+header {
+    height: 60px;
+    border-bottom: 1px solid $color-border;
+    position: fixed;
+    inset: 0;
+    background-color: $color-white;
+    z-index: 10;
+
+    .container {
+        height: 100%;
+    }
+
+    .header-content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            padding-right: 12px;
+            margin-right: 12px;
+            border-right: 1px solid $color-border;
+            max-width: 76px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+    }
+}
+
+

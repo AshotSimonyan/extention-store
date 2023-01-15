@@ -1,0 +1,50 @@
+@mixin position($position: absolute, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin ellipsis($width) {
+    max-width: $width;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin line-clamp($count) {
+    display: -webkit-box;
+    -webkit-line-clamp: $count;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+// Alignment
+
+@mixin YAlign {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin XAlign {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin XYAlign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Background image
+
+@mixin bgImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

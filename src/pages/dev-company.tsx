@@ -7,7 +7,7 @@ import {Input} from "components/UIKit";
 
 const DevCompany = () => {
     const [title, setTitle] = useState('');
-    const debouncedTitle = useDebounce(title, 500);
+    const debouncedTitle = useDebounce(title, 1000);
 
     const {data = []} = useGetExtensions(debouncedTitle);
 

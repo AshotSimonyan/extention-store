@@ -84,7 +84,7 @@ export const Card: FC<CardProps> = ({mode, extension: {img, title, companyUrl, c
                 <p className='long-desc'>{longDesc}</p>
                 <div className='author'>
                     <h4 className='mb-12'>Developed By:</h4>
-                    <a className='btn-url' href={companyUrl} target='_blank'>
+                    <a className='btn-url truncate' href={companyUrl} target='_blank'>
                         <Icon name='link'/>
                         {companyName}
                     </a>

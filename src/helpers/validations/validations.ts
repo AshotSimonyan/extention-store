@@ -16,7 +16,7 @@ export const maxLength: RegisterOptions = {
 export const minLength: RegisterOptions = {
     required: messages.required,
     minLength: {
-        value: 300,
+        value: 200,
         message: messages.minLength
     }
 }

@@ -99,9 +99,10 @@
 }
 
 .btn-url {
-    display: inline-flex;
+    display: inline-block;
     align-items: center;
     height: 30px;
+    line-height: 30px;
     padding: 0 8px;
     border: 1px solid $color-border;
     border-radius: $br-main;

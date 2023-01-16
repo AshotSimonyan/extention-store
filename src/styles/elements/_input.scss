@@ -55,10 +55,6 @@
         margin-bottom: 10px;
     }
 
-    .error-message {
-        font-size: $fz-sm;
-    }
-
     &.has-error {
 
         input, textarea {
@@ -66,8 +62,6 @@
         }
 
         .error-message {
-            color: $color-danger;
-
             &:not(.static-message) {
                 position: absolute;
                 top: 100%;

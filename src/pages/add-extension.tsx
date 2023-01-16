@@ -21,12 +21,7 @@ const AddExtension = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors, isDirty, isValid },
-        reset,
-        control,
-        setValue,
-        setError,
-        clearErrors,
+        formState: { errors},
     } = useForm<ExtensionForm>({
         mode: "onChange",
         defaultValues: {
@@ -85,12 +80,15 @@ const AddExtension = () => {
                 />
 
                 <h2 className='text-divider'><span>3 Extension Icon *</span></h2>
-                <Input
-                    type="file"
-                    placeholder="Link to Company Website *"
-                    errorMessage={errors.companyUrl?.message}
-                    {...register("img")}
-                />
+                <div className='mb-36'>
+                    <input
+                        type="file"
+                        placeholder="Link to Company Website *"
+                        className='file'
+                        {...register("img")}
+                    />
+                    <p className='error-message'>{errors.companyUrl?.message}</p>
+                </div>
 
                 <h2 className='text-divider'><span>4 Publisher Info *</span></h2>
                 <Input

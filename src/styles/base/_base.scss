@@ -5,19 +5,6 @@ body {
   line-height: 1.4;
   font-weight: 400;
   height: 100%;
-
-    &.with-layer {
-        transition: .3s;
-        &:after {
-            content: '';
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba($color-text-primary, 0.5);
-        }
-    }
 }
 
 .layout {
